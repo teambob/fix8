@@ -32,6 +32,7 @@
 # HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 #
 #############################################################################################
+include $(top_srcdir)/aminclude_static.am
 
 if USEDOXYGEN
 doxyfile.stamp:
@@ -41,8 +42,8 @@ doxyfile.stamp:
 CLEANFILES = doxyfile.stamp
 
 all-local: doxyfile.stamp
-clean-local:
-	rm -rf $(top_srcdir)/doc/html
+#clean-local:
+#	rm -rf $(top_srcdir)/doc/html
 
 endif
 

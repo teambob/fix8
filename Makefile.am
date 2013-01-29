@@ -32,6 +32,7 @@
 # HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 #
 #############################################################################################
+include $(top_srcdir)/aminclude_static.am
 
 SUBDIRS = runtime compiler test
 

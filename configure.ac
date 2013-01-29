@@ -522,10 +522,14 @@ AC_SUBST(BRAND_DESCRIPTION)
 AC_SUBST(BRAND_COMPANY_SHORTNAME)
 AC_SUBST(BRAND_COMPANY_LONGNAME)
 
+AX_AM_MACROS_STATIC
+AX_DIST_RPM(fix8.spec)
+
 AC_CONFIG_FILES([Makefile runtime/Makefile compiler/Makefile test/Makefile doc/fix8.doxygen])
 AC_CONFIG_HEADERS(include/f8config.h)
 AC_OUTPUT
 
 AC_SUBST(CONFIG_SHELL)
 AM_CONDITIONAL(HAVE_OPENSSL, test "x$openssl" = "xyes")
+
 

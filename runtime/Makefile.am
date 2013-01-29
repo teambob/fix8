@@ -32,6 +32,7 @@
 # HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 #
 #############################################################################################
+include $(top_srcdir)/aminclude_static.am
 lib_LTLIBRARIES = libfix8.la
 inc = $(top_srcdir)/include
 INCLUDES = -I$(inc)

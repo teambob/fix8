@@ -32,6 +32,8 @@
 # HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 #
 #############################################################################################
+include $(top_srcdir)/aminclude_static.am
+
 bin_PROGRAMS = f8test f8print hftest hfprint harness
 lib_LTLIBRARIES = libmyfix.la libhftest.la
 f8test_SOURCES = myfix.cpp myfix.hpp myfix_custom.hpp
