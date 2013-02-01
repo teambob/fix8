@@ -33,17 +33,19 @@
 #############################################################################################
 include $(top_srcdir)/aminclude_static.am
 
-SUBDIRS = runtime compiler test
+SUBDIRS = runtime compiler test doc
 
 if USEDOXYGEN
 SUBDIRS += doc
 endif
 
+
 #############################################################################################
 ACLOCAL_AMFLAGS = -I m4
 
-EXTRA_DIST = doc/fix8.doxygen doc/mainpage.doxygen \
-				 schema/*.xml schema/QUICKFIX-LICENCE include/*.hpp
+EXTRA_DIST = doc/fix8.doxygen doc/mainpage.doxygen doc/fix8.footer.html \
+				 schema/*.xml schema/QUICKFIX-LICENCE include/*.hpp \
+		test/*.xml test/do-mfstamp-am test/f8_hf_test test/FIX50SP2.xml.p1
 
 $(distdir).tar.gz:
 	make dist

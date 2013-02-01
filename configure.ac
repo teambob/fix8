@@ -537,9 +537,10 @@ AC_SUBST(BRAND_COMPANY_SHORTNAME)
 AC_SUBST(BRAND_COMPANY_LONGNAME)
 
 AX_AM_MACROS_STATIC
-AX_DIST_RPM(fix8.spec)
+#AX_DIST_RPM(fix8.spec)
+AX_INSTALL_FILES
 
-AC_CONFIG_FILES([Makefile runtime/Makefile compiler/Makefile test/Makefile doc/fix8.doxygen])
+AC_CONFIG_FILES([Makefile runtime/Makefile compiler/Makefile test/Makefile doc/fix8.doxygen fix8.spec])
 AC_CONFIG_HEADERS(include/f8config.h)
 AC_OUTPUT
 
